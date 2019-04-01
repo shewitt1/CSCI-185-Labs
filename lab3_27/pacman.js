@@ -5,7 +5,7 @@ var pacman_size = 100;
 var pacman_theta = 0.25*Math.PI;
 var theta_speed = 0.05 * Math.PI;
 var pacman_direction = "right";
-var pacman_speed = 50;
+var pacman_speed = 10;
 
 
 function game(){
@@ -53,7 +53,7 @@ function animation_loop(){
 	// draw cheries
 	
 	// call animation_loop in a little bit
-	setTimeout(function(){ animation_loop(); }, 100);
+	setTimeout(function(){ animation_loop(); }, 10);
 }
 
 function move_pacman(){
