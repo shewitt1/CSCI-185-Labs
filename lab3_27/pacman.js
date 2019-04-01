@@ -128,8 +128,53 @@ function draw_pacman(){
 	
 }
 
-function draw_all_walls() {
+//list of walls
+var horizontal_walls = [
+	[300,300],
+	[400,300],
+	[500,300],
+];
+var vertical_walls = [
+	[300,300],
+	[300,400],
+	[300,500],
+];
 
+function draw_all_walls() {
+	//draw all the horizontal walls
+	for( var i = 0; i < horizontal_walls.length; i++){
+		draw_horizontal_wall( i );
+	}
+	//draw all the vertical walls
+	for( var j = 0; i < vertical_walls.length; j++){
+		draw_vertical_wall( i );
+	}
+}
+
+function draw_horizontal_wall( z ){
+//z = index of wall drawing
+	var c = document.getElementById('screen');
+	var ctx = c.getContext('2d');
+
+	var this_wall = horizontal_walls[z];
+	var x = this_wall[0];
+	var y =	this_wall[1];
+
+	ctx.fillStyle = 'blue';
+	ctx.fillRect(x, y, pacman_size, 10);
+}
+
+function draw_vertical_wall( d ){
+//d = index of wall drawing
+	var c = document.getElementById('screen');
+	var ctx = c.getContext('2d');
+
+	var this_wall = vertical_walls[d];
+	var x = this_wall[0];
+	var y =	this_wall[1];
+
+	ctx.fillStyle = 'blue';
+	ctx.fillRect(x, y, pacman_size, 10);
 }
 
 function draw_wall( i ) {
