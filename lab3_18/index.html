@@ -1,0 +1,94 @@
+
+
+<!DOCTYPE html>
+<HTML lang="en-US">
+<HEAD>
+	<TITLE> Pong </TITLE>
+	<SCRIPT src="pong.js"></SCRIPT>
+	<STYLE>
+		.ball {
+			position: fixed;
+			top: 0px;
+			left: 0px;
+			height: 100px;
+			width: 100px;
+			border-radius: 50%;
+			background-color: white;
+		}
+		.ball span {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		BODY {
+			background-color: black;
+		}
+		.paused {
+			display: none;
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			opacity: 0.5;
+			background-color: black;
+		}
+		.paused span {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			font-size: 25pt;
+			color: white;
+			font-weight: bold;
+		}
+		.left_bar {
+			position: fixed;
+			background-color: white;
+			width: 50px;
+			height: 300px;
+			top: 0px;
+			left: 0px;
+		}
+		.right_bar {
+			position: fixed;
+			background-color: white;
+			width: 50px;
+			height: 300px;
+			top: 0px;
+			right: 0px;
+		}
+		.start {
+			display: block;
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			opacity: 0.5;
+			background-color: black;
+		}
+		.start span {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			font-size: 16pt;
+			background-color: white;
+			color: black;
+			font-weight: bold;
+		}
+	</STYLE>
+</HEAD>
+<BODY  onresize="resize()" >
+<DIV id="ball1" class="ball"></DIV>
+<DIV id="bar1" class="left_bar"></DIV>
+<DIV id="bar2" class="right_bar"></DIV>
+<DIV id="paused_screen" class="paused"><SPAN>Paused, press space to start again</SPAN></DIV>
+
+<DIV id="start_screen" class="start">
+	<SPAN>Player 1: use W and S<BR>
+	Player 2: use Up and Down
+	<BUTTON onclick="start_game()">Start Game</BUTTON>
+	</SPAN>
+</DIV>
+
+</BODY>
+</HTML>

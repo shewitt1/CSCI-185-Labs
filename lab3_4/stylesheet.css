@@ -1,0 +1,35 @@
+
+body {
+    background-color:#dbf9ff;
+}
+
+.control {
+    position:fixed;
+    background-color:black;
+    left:50%;
+    top:0px;
+    transform: translate(-50%, 0%);
+    width:100px;
+    height:45px;   
+}
+
+.flake {
+    position:fixed;
+    top:0px;
+    left:0%;
+    width:600px;
+  display:inline-block;
+}
+
+.flake img {
+    margin-left:50px;
+}
+
+
+.letitsnow {
+    position:fixed;
+    display:none;
+    top:30%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,43 @@
+/* stylesheet.css */ 
+
+.menu {
+background-color:saddlebrown;
+border:1px solid black;
+}
+
+.menuitem {
+background-color: tan;
+border: 1px solid red;
+width:100px;
+padding:10px;
+margin-left:25px;
+margin-right:25px;
+display: inline-block;
+text-align: center;
+}
+
+body {
+    background-image: linear-gradient(90deg, maroon, goldenrod, purple, orange, green, blue, red, white, grey, indigo, violet, pink, hotpink, grey, white, orange, red, blue, pink, purple, lightblue, black, indigo, yellow, red, orange, green, green, black, blue, yellow, orange, red, pink, orange, brown, saddlebrown, goldenrod, pink, green, aquamarine, gold, maroon, goldenrod, purple, orange, green, blue, red, white, grey, indigo, violet, pink, hotpink, grey, white, orange, red, blue, pink, purple, lightblue, black, indigo, yellow, red, orange, green, green, black, blue, yellow, orange, red, pink, orange, brown, saddlebrown, goldenrod, pink, green, aquamarine, gold)
+
+
+}
+
+.crab {
+    background-image: url("ham.png");
+    height: 400px;
+    width: 400px;
+    color:white;
+    font-size:35px;
+    font-family: "Comic Sans MS", Sans, serif;
+    background-repeat:no-repeat;
+    opacity: 0.9;
+    animation-name: ham_move;
+    animation-duration: 5s;
+    position: fixed;
+
+}
+
+@keyframes ham_move {
+    from { margin-left: 0px; }
+        to { margin-right: 400px; }
+}

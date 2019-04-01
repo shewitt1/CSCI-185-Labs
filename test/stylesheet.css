@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.box1 {
+  display: inline-block;
+  background-color: red;
+  width: 33.34%;
+  height: 33.34%;
+  position: fixed;
+}
+.box2 {
+  display: inline-block;
+  background-color: maroon;
+  width: 33.34%;
+  height: 33.34%;
+  position: fixed;
+  left: 33.34%;
+}
+.box3 {
+  display: inline-block;
+  background-color: darkred;
+  width: 33.34%;
+  height: 33.34%;
+  position: fixed;
+  left: 66.68%;
+}
+.box4 {
+  display: inline-block;
+  background-color: #acfc00;
+  width: 33.34%;
+  height: 33.34%;
+  position: fixed;
+  top: 33.33%;
+}
+.box5 {
+  display: inline-block;
+  background-color: #6bef00;
+  width: 33.34%;
+  height: 33.34%;
+  position: fixed;
+  top: 33.34%;
+  left: 33.34%;
+}
+.box6 {
+  display: inline-block;
+  background-color: #54bc00;
+  width: 33.34%;
+  height: 33.34%;
+  position: fixed;
+  top: 33.34%;
+  left: 66.68%;
+}
+.box7 {
+  display: inline-block;
+  background-color: blue;
+  width: 33.34%;
+  height: 33.34%;
+  position: fixed;
+  top: 66.68%;
+}
+.box8 {
+  display: inline-block;
+  background-color: darkblue;
+  width: 33.34%;
+  height: 33.34%;
+  position: fixed;
+  top: 66.68%;
+  left: 33.34%;
+}
+.box9 {
+  display: inline-block;
+  background-color: darkslateblue;
+  width: 33.34%;
+  height: 33.34%;
+  position: fixed;
+  top: 66.68%;
+  left: 66.68%;
+}
+
+.middlebox {
+    position:fixed;
+    top:50%;
+    left:50%;
+    margin-top:-125px;
+    margin-left:-125px;
+    background-color:lightblue;
+    width:250px;
+    height:250px;
+    text-align:center;
+    border-radius:20px;
+    border:5px solid black;
+    display:block;
+
+}
+
+.suprise {
+
+    left:50%;
+    top:50%;
+    margin-top:-25px;
+    margin-left:-55px;
+    position:relative;
+    width:100px;
+    height:55px;
+
+    background-color:white;
+    border:1px solid black; 
+
+}
+
+.middlebox:hover .suprise {
+    display:none;
+
+
+}
+
+
+.smile {
+    border-radius:250px;
+    border:5px solid black;
+    width:500px;
+    height:500px;  
+    margin-left:-250px;
+    margin-top:-250px;
+    top:50%;
+    left:50%;
+    position:absolute;
+    background-color:yellow;
+
+}
+
+.eye {
+    border-radius: 250px;
+    width:50px;
+    height:50px;
+    top:150px;
+    left:100px;
+    position:absolute;
+    background-color:black;
+}
+.eye2 {
+    border-radius: 250px;
+    width:50px;
+    height:50px;
+    top:150px;
+    left:350px;
+    position:absolute;
+    background-color:black;
+}
+.mouth{
+    border-radius: 100px / -50px;
+    width:200px;
+    height:50px;
+    top:350px;
+    left:150px;
+    position:absolute;
+    background-color:black;
+}
+
+.smile {
+    display:none;
+}
+
+.middlebox:hover { 
+    opacity:0;
+
+}
+
+.middlebox:hover .smile { /* ive spent so long on this it just wont work */
+    display:block;
+
+}
+
+
+

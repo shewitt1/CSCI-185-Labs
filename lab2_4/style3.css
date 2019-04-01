@@ -1,0 +1,35 @@
+/* stylesheet.css */ 
+
+.menu {
+background-color:saddlebrown;
+border:1px solid black;
+}
+
+.menuitem {
+background-color: tan;
+border: 1px solid red;
+width:100px;
+padding:10px;
+margin-left:25px;
+margin-right:25px;
+display: inline-block;
+text-align: center;
+}
+
+body {
+
+
+    background-image:radial-gradient(green 5%, red 20%, yellow 15%, white 10%, tan 20%, purple 30%)
+}
+
+.crab {
+    background-image: url("ham.png");
+    color:green;
+    font-size:35px;
+    font-family: "Comic Sans MS", Sans, serif;
+    background-repeat:repeat;
+    opacity: 0.9;
+    position: fixed;
+
+}
+

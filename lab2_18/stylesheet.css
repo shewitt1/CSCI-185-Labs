@@ -1,0 +1,145 @@
+body {
+    margin:0px;
+
+}
+
+
+.div1{
+    width:95%;
+    height:95%;
+    position:absolute;
+    background-color:whitesmoke;
+    border:2px dashed lightsalmon;
+    outline:2px dashed limegreen;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition:background-color 2s;
+  
+}
+
+.firstclass{
+    width:100%;
+    height:100%;
+    position:absolute;
+
+}
+
+.div1:hover{
+    background-color:black;
+
+}
+
+.words{
+
+    position:absolute;
+    top:50px;
+    left:50px;
+    width:150px;
+    height:150px;   
+
+
+}
+
+.words:hover .inside{
+    display:block;
+
+}
+
+.inside{
+    position:absolute;
+    width:100%;
+    height:100%;
+    font-size:16pt;
+    background-color:white;
+    display:none; /*invis*/ 
+}
+
+.inside span {
+    color:white;
+    transition:color 2s;
+    transition-delay:2s;
+}
+
+.words:hover .inside span{
+    color:black;
+
+}
+
+.littlecorn {
+    position:absolute;
+    top:50px;
+    left:350px;
+    width:150px;
+    height:150px;
+}
+
+.bigcorn {
+    display:none;
+
+}
+
+.littlecorn:hover .bigcorn {
+    display:block;
+
+}
+
+.littlecorn:hover .hideme{
+    display:none;
+}
+
+.pirate{
+    position:absolute;
+    top:350px;
+    left:200px;
+    height:150px;
+    width:150px;
+
+}
+
+.pirate img{
+    width:150px;
+    height:150px;
+    transition:width 1s, height 2s;
+    transition-delay:1s;
+
+}
+
+.pirate:hover img{
+    width:300px;
+    height:300px;
+}
+
+
+.hotdog img {
+
+    width:250px;
+    height:300px;
+}
+.hotdog{
+    top:100px;
+    left:1000px;
+    width:250px;
+    height:250px;
+    position:absolute;
+    background-color:orange;
+}
+
+.hotdog:hover {
+    widows: 500px;
+    height:1000px;
+    transition:width 2s, height .5s;
+    transition-delay:1s;
+    background-color:green;
+
+
+}
+
+.hotdog:hover img{
+    widows: 500px;
+    height:1000px;
+    transition:width 1s, height 2s;
+    transition-delay:1s;
+
+
+}

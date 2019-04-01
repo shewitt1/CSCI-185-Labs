@@ -1,0 +1,46 @@
+/* stylesheet.css - for mablibs */
+
+.message {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background-color: black;
+	width: 250px;
+	height: 250px;
+	border-radius: 50px;
+}
+.message button {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.left{
+	display: none;
+	position: fixed;
+	left: 0px;
+	width: 50%;
+	height: 100%;
+	background-color: lightblue;
+}
+.left span {
+	background-color: black;
+    color: white;
+    
+}
+.right SPAN {
+	border: 2px solid black;
+	
+}
+
+.right{
+	display: none;
+	position: fixed;
+	right: 0px;
+	width: 50%;
+	height: 100%;
+	background-color: lightpink;
+}
