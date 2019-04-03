@@ -50,6 +50,7 @@ function animation_loop(){
     // draw walls
     draw_all_walls();
 	// draw pellets
+	draw_all_pellets();
 	// draw cheries
 	
 	// call animation_loop in a little bit
@@ -78,7 +79,7 @@ function move_pacman(){
     }else if(pacman_direction == "up"){
         pacman_position[1] = pacman_position[1] - pacman_speed;
         if(pacman_position[1] <= 0){
-            pacman_position[1] = 0;
+            pacman_position[1] = window.innerHeight;
     }
 }
 }
@@ -133,12 +134,38 @@ var horizontal_walls = [
 	[300,300],
 	[400,300],
 	[500,300],
+	[600,300],
+	[700,300],
+	[300,200],
+	[400,200],
+	[500,200],
+	[600,200],
+	[700,200],
+
 ];
 var vertical_walls = [
 	[300,300],
 	[300,400],
 	[300,500],
+	[800,300],
+	[800,400],
+	[800,500],
+
 ];
+
+var list_of_pellets = [
+	[200,250],
+	[300,250],
+	[400,250],
+	[500,250],
+	[600,250],
+	[700,250],
+	[800,250],
+	[900,250],
+	[900,350],
+	[900,450],
+
+]
 
 function draw_all_walls() {
 	//draw all the horizontal walls
@@ -146,9 +173,11 @@ function draw_all_walls() {
 		draw_horizontal_wall( i );
 	}
 	//draw all the vertical walls
-	for( var j = 0; i < vertical_walls.length; j++){
-		draw_vertical_wall( i );
+	for( var j=0 ; j < vertical_walls.length ; j++ ){
+		// draw wall j
+		draw_vertical_wall( j );
 	}
+	
 }
 
 function draw_horizontal_wall( z ){
@@ -174,12 +203,41 @@ function draw_vertical_wall( d ){
 	var y =	this_wall[1];
 
 	ctx.fillStyle = 'blue';
-	ctx.fillRect(x, y, pacman_size, 10);
+	ctx.fillRect(x, y, 10, pacman_size);
+	
 }
 
-function draw_wall( i ) {
-    
+function draw_pellets ( p ){
+	var c = document.getElementById('screen');
+	var ctx = c.getContext('2d');
+
+	var this_pellet = list_of_pellets[p];
+	var x = this_pellet[0];
+	var y = this_pellet[1];
+
+	ctx.beginPath();
+	ctx.arc(x,y,10,0,2*Math.PI);
+	ctx.fillStyle = 'white';
+	ctx.fill();
+	ctx.stroke();
 }
+
+function draw_all_pellets() {
+    for( var p=0 ; p < list_of_pellets.length ; p++ ){
+		// draw wall j
+		draw_pellets( p );
+	}
+}
+
+/*
+var pellets = [
+	
+];
+
+function draw_all_pellets() {
+
+}
+*/
 
 
 function erase(){
