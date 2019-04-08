@@ -68,11 +68,11 @@ function animation_loop(){
 }
 //list of walls
 var horizontal_walls = [
-	[300,300],
-	[400,300],
-	[500,300],
-	[600,300],
-	[700,300],
+	[300,325],
+	[400,325],
+	[500,325],
+	[600,325],
+	[700,325],
 	[300,200],
 	[400,200],
 	[500,200],
@@ -81,12 +81,12 @@ var horizontal_walls = [
 
 ];
 var vertical_walls = [
-	[300,300],
-	[300,400],
-	[300,500],
-	[800,300],
-	[800,400],
-	[800,500],
+	[300,325],
+	[300,425],
+	[300,525],
+	[800,325],
+	[800,425],
+	[800,525],
 
 ];
 
@@ -228,6 +228,9 @@ function draw_pellets( p ){
 
 
 function move_pacman(){
+	var save_x = pacman_position[0];
+	var save_y = pacman_position[1];
+
  if( pacman_direction == "right"){
   pacman_position[0] = pacman_position[0] + pacman_speed;
   if(pacman_position[0] > window.innerWidth ){
