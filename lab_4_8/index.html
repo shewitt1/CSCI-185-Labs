@@ -19,9 +19,33 @@
 		.cookie_notify button {
 			background-color: #555555;
 		}
+
+        .buttons {
+            position:fixed;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%)
+        }
+        
+        a {
+            font-size:30px;
+        }
 	</STYLE>
 </HEAD>
-<BODY onload="check()">
+<BODY onload="check();set_background_color()"> 
+
+    <div class="buttons">
+
+    <button onclick="change_color('red')">Red</button>
+    <button onclick="change_color('green')">Green</button>
+    <button onclick="change_color('blue')">Blue</button>
+    <a href="page2.html">Page 2</a>
+
+    </div>
+
+
+   
+
 
 
 

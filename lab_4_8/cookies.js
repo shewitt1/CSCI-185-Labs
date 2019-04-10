@@ -59,6 +59,18 @@ function getCookie(cname) {
   return "";
 }
 
+function change_color(which_color) {
+    document.body.style.backgroundColor = which_color;
+
+    setCookie('body_background_color', which_color);
+}
+
+function set_background_color() {
+    var cookie_value = getCookie('body_background_color');
+        if (cookie_value != '') {
+            document.body.style.backgroundColor = cookie_value;
+        }
+}
 
 
 
