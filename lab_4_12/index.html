@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<HTML lang="en-US">
+<HEAD>
+	<TITLE>Chat</TITLE>
+	<SCRIPT src="chat.js"></SCRIPT>
+	<STYLE>
+		BODY {
+			background-color: black;
+		}
+		.send {
+			background-color: darkgray;
+			width: 500px;
+			height: 90%;
+			position: fixed;
+			top: 10px;
+			right: 10px;
+			color: white;
+			overflow: scroll;
+		}
+		.type {
+			background-color: darkgray;
+			color: white;
+			position: fixed;
+			width: 500px;
+			right: 10px;
+			bottom: 5px;
+			height: 50px;
+			border: 1px solid red;
+		}
+	</STYLE>
+</HEAD>
+<BODY onload="start()">
+
+<DIV class="send" id="talk">
+</DIV>
+
+<DIV contenteditable="True" class="type" id="mess"></DIV>
+
+
+</BODY>
+</HTML>

@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<HTML lang="en-US">
+<HEAD>
+	<TITLE> Take a Survey </TITLE>
+	<SCRIPT src="survey.js"></SCRIPT>
+	<STYLE>
+		.quiz_box {
+            position:fixed;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+			min-height: 500px;
+			width: 600px;
+			border: 5px solid black;
+            border-radius:25px;
+		}
+	</STYLE>
+</HEAD>
+
+<BODY>
+
+<DIV id="question_0" class="quiz_box">
+<BR><BR><BR><BR>
+<BR><BR><BR><BR>
+<CENTER> 
+	<BUTTON onclick="show_question(1)">Start the Quiz</BUTTON>
+</CENTER>
+
+</DIV>
+
+<!--QUESTION 1-->
+
+<DIV id="question_1" class="quiz_box" style="display: none">
+	<CENTER><B>Question 1</B></CENTER>
+	When the following javascript code is executed, what will be shown in the alert?
+	<PRE>
+		var a = 10;
+		var b = 20;
+		
+		a = b;
+		
+		alert("a=" + a + "b=" + b);
+	</PRE>
+	<!-- answers -->
+	<FORM id="question_1_form">
+	<OL>
+		<LI><INPUT TYPE="radio" name="question_1_answer" value="a">
+			a=10 b=10 </LI>
+		<LI><INPUT TYPE="radio" name="question_1_answer" value="b">
+			a=20 b=10 </LI>
+		<LI><INPUT TYPE="radio" name="question_1_answer" value="c">
+			a=10 b=20 </LI>
+		<LI><INPUT TYPE="radio" name="question_1_answer" value="d">
+			a=20 b=20 </LI>
+		<LI><INPUT TYPE="radio" name="question_1_answer" value="e">
+			None of the above </LI>
+	</OL>
+	</FORM>
+
+
+    <BR><BR><BR><BR>
+        <center>
+	<BUTTON onclick="save_value(1); show_question(2)">Next</BUTTON>
+    <BUTTON onclick="go_back(0)">Back</BUTTON>
+    </center>
+</DIV>
+
+
+<!--QUESTION 2-->
+
+<DIV id="question_2" class="quiz_box" style="display: none">
+    <CENTER><B>Question 2</B></CENTER>
+	Given the following function:
+	<PRE>
+		function calculate_grade( mark ){
+            if(mark > 80) {
+                var grade = 'A';
+            } else if (mark > 60){
+                var grade = 'B';
+            } else if (mark > 40){
+                var grade = 'C';
+            } else {
+                var grade = 'F';
+            }
+            return grade;
+        }
+    </PRE>
+    What will the following javascript show?
+    <pre>
+        alert (calculate_grade( -12 ));
+    </pre>
+	<!-- answers -->
+	<FORM id="question_2_form">
+	<OL>
+		<LI><INPUT TYPE="radio" name="question_2_answer" value="a">
+		A</LI>
+		<LI><INPUT TYPE="radio" name="question_2_answer" value="b">
+			B </LI>
+		<LI><INPUT TYPE="radio" name="question_2_answer" value="c">
+			C </LI>
+		<LI><INPUT TYPE="radio" name="question_2_answer" value="d">
+			F</LI>
+		<LI><INPUT TYPE="radio" name="question_2_answer" value="e">
+			None of the above </LI>
+	</OL>
+	</FORM>
+	<BUTTON onclick="save_value(2);show_question(3)">Next</BUTTON>
+	<BUTTON onclick="go_back(1)">Back</BUTTON>
+</DIV>
+
+
+<!--QUESTION 3-->
+
+
+<DIV id="question_3" class="quiz_box" style="display: none">
+	<CENTER><B>Question 3</B></CENTER>
+	What will the following javascript code show?
+	<PRE>
+        var total = 0;
+        for ( var i = 0; i < 4; i++) {
+            total = total + i;
+        }
+        alert(total);
+    </PRE>
+	<!-- answers -->
+	<FORM id="question_3_form">
+	<OL>
+		<LI><INPUT TYPE="radio" name="question_3_answer" value="a">
+		0</LI>
+		<LI><INPUT TYPE="radio" name="question_3_answer" value="b">
+			4 </LI>
+		<LI><INPUT TYPE="radio" name="question_3_answer" value="c">
+			6 </LI>
+		<LI><INPUT TYPE="radio" name="question_3_answer" value="d">
+			8</LI>
+		<LI><INPUT TYPE="radio" name="question_3_answer" value="e">
+			None of the above </LI>
+	</OL>
+	</FORM>
+	<BUTTON onclick="save_value(3);show_question(4)">Next</BUTTON>
+	<BUTTON onclick="go_back(2)">Back</BUTTON>
+</DIV>
+
+
+<!--QUESTION 4-->
+
+<DIV id="question_4" class="quiz_box" style="display: none">
+    <CENTER><B>Question 4</B></CENTER>
+	If the following code:
+	<PRE>
+        var alphabet = 'abcdefghijklmnopqrstuvwxyz';
+        alert( alphabet.charAt(0));
+    </PRE>
+    shows the letter 'a' in the alert box, what does the following code show?
+    <pre>
+        var alphabet = 'abcdefghijklmnopqrstuvwxyz';
+        var show = "the letter is: ";
+        var i = 1;
+        while ( alphabet.charAt(i) != 'i'){
+            show = alphabet.charAt(i);
+            i++;
+        }
+        alert(show);
+    </pre>
+	<!-- answers -->
+	<FORM id="question_4_form">
+	<OL>
+		<LI><INPUT TYPE="radio" name="question_4_answer" value="a">
+		the letter is: abcdefgh</LI>
+		<LI><INPUT TYPE="radio" name="question_4_answer" value="b">
+			h </LI>
+		<LI><INPUT TYPE="radio" name="question_4_answer" value="c">
+			i </LI>
+		<LI><INPUT TYPE="radio" name="question_4_answer" value="d">
+			bcdefgh</LI>
+		<LI><INPUT TYPE="radio" name="question_4_answer" value="e">
+			None of the above </LI>
+	</OL>
+	</FORM>
+	<BUTTON onclick="save_value(4);show_question(5)">Next</BUTTON>
+	<BUTTON onclick="go_back(3)">Back</BUTTON>
+</DIV>
+
+
+<!--QUESTION 5-->
+
+<DIV id="question_5" class="quiz_box" style="display: none">
+    <CENTER><B>Question 5</B></CENTER>
+	What does the following javascript code show?
+	<PRE>
+        var mylist = ['a', 'b', 'c', 'd', 'e', 'f', 'g'];
+        var x = '';
+        for (var i = mylist.length -1; i >=0; i--){
+            x = x + mylist[i];
+        }
+        alert(x);
+    </PRE>
+	<!-- answers -->
+	<FORM id="question_5_form">
+	<OL>
+		<LI><INPUT TYPE="radio" name="question_5_answer" value="a">
+		abcdefg</LI>
+		<LI><INPUT TYPE="radio" name="question_5_answer" value="b">
+	    gfedcba</LI>
+		<LI><INPUT TYPE="radio" name="question_5_answer" value="c">
+			a </LI>
+		<LI><INPUT TYPE="radio" name="question_5_answer" value="d">
+			g</LI>
+		<LI><INPUT TYPE="radio" name="question_5_answer" value="e">
+			None of the above </LI>
+	</OL>
+	</FORM>
+    <BUTTON onclick="save_value(5);go_back(4)">Back</BUTTON>
+    <button onclick="get_score()">Finish</button>
+</DIV>
+
+
+
+</BODY>
+</HTML>

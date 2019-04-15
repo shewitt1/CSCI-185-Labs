@@ -48,7 +48,9 @@ function animation_loop(){
 	draw_pacman();
 	// draw ghosts
     // draw walls
-    draw_all_walls();
+	draw_all_walls();
+	//eat pellets
+	eat_pellets();
 	// draw pellets
 	draw_all_pellets();
 	// draw cheries
@@ -83,6 +85,8 @@ function move_pacman(){
     }
 }
 }
+
+
 
 function draw_pacman(){
 	var c = document.getElementById('screen');
@@ -228,17 +232,6 @@ function draw_all_pellets() {
 		draw_pellets( p );
 	}
 }
-
-/*
-var pellets = [
-	
-];
-
-function draw_all_pellets() {
-
-}
-*/
-
 
 function erase(){
 	var c = document.getElementById('screen');
