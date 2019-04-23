@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<HTML lang="en-US">
+<HEAD>
+    <TITLE> Tic Tac Toe</TITLE>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <STYLE>
+    .name {
+        width: 100%;
+        height: 40px;
+    }
+    .directions {
+        width: 210px;
+    }
+    .board {
+        position: absolute;
+        left: 250px;
+        top: 75px;
+        width: 599px;
+        height: 591px;
+        border: 5px black solid;
+        padding: 0px;
+    }
+    .square {
+        border: 1px black solid;
+        display: inline-block;
+        width: 195px;
+        height: 195px;
+        margin: 0px;
+    }
+    .player {
+        border: red dashed 1px;
+        margin: 2px;
+        width: 202;
+        background-color:white;
+    }
+    .player span {
+        position: relative;
+        top: 50%;
+        left: 0%;
+        transform: translate(-50%, 0%);
+    }
+    .square span {
+        font-size: 75px;
+    }
+    .square i {
+        margin: 0;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    </STYLE>
+    <SCRIPT src="tictactoe.js">
+    </SCRIPT>
+</HEAD>
+<BODY>
+<DIV>
+    <CENTER><H1>
+        Tic-Tac-Toe, by Spencer Hewitt
+    </H1></CENTER>
+</DIV>
+<DIV class="directions">
+    <H3> First click on one of the boxes below to select the player.</H3>
+    <DIV class="player" onclick="change_color()" id="player1"> 
+        <SPAN>Player 1:<SPAN>  <i class="fa fa-times fa-5x" aria-hidden="true"></i>
+    </DIV>
+    <DIV class="player"  onclick="change_color()" id="player2">
+        <SPAN>Player 2:</SPAN>  <i class="fa fa-circle-o fa-5x" aria-hidden="true"></i>
+    </DIV>
+    <H3>Next, click on a square on the board to the left.</H3>
+</DIV>
+
+<DIV class="board">
+    <DIV class="square"  id="north-west"  onclick="select_square()" ><span>&nbsp;</span></DIV>
+    <DIV class="square" id="north-center"  onclick="select_square()" ><span>&nbsp;</span></DIV>
+    <DIV class="square" id="north-east"  onclick="select_square()" ><span>&nbsp;</span></DIV>
+
+    <DIV class="square" id="middle-west"  onclick="select_square()"><span>&nbsp;</span></DIV>
+    <DIV class="square"  id="middle-center"  onclick="select_square()"><span>&nbsp;</span></DIV>
+    <DIV class="square" id="middle-east"  onclick="select_square()"><span>&nbsp;</span></DIV>
+
+    <DIV class="square"  id="south-west"  onclick="select_square()"><span>&nbsp;</span></DIV>
+    <DIV class="square"  id="south-center"  onclick="select_square()"><span>&nbsp;</span></DIV>
+    <DIV class="square"  id="south-east"  onclick="select_square()"><span>&nbsp;</span></DIV>
+    
+</DIV>
+
+</BODY></HTML>
