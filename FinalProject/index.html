@@ -30,7 +30,7 @@
                   });
                 });
 
-    $(document).ready(function(){
+                $(document).ready(function(){
         $("#link2").click(function() {
             $.scrollify.next();
        });
@@ -45,12 +45,28 @@
        });
     });
 
+    $(function(){
+$(".about_images > div:gt(0)").hide();
+
+setInterval(function() { 
+  $('.about_images> div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('.about_images');
+},  3500);
+});
+
+ 
+
     
               </script>
+
     </head>
 
 
-    <body onload="typewriter_effect()">
+    <body onload="typewriter_effect();">
             <div id="fullpage" class="panels">
                 <section class="section">
                     <div class="navbar-top">
@@ -70,7 +86,7 @@
                     <p id="typewriter" class="bio_anim"></p>
             
                     <div class="arrow_bottom" >
-                            <a href="#" id="arrow_next"><img src="media/arrowdown.png" alt="nextarrow"></a>
+                            <img src="media/arrowdown.png" alt="nextarrow" width="50px" height="50px">
                     </div>
                 </section>
                 <section class="section" id="about">
@@ -91,17 +107,32 @@
                                     </div>
 
                             <div class="about_text">
-                                this can be above
+                               <p>My name is Spencer Hewitt, and I am a Cybersecurity Enthusiast and Web Developer currently located in Asheville, NC. 
+                                   I am attending UNC Asheville for Computer Science, but plan on transferring to either Georgia Tech or UNC Charlotte to pursue cybersecurity. In my free time, I enjoy coding, doing cybersecurity Capture the Flags, and whitewater kayaking.</p>
                             </div>
 
                             <div class="about_images">
-                                
+                                <div>
+                                <img src="media/aboutme_1.png" width="250px" height="250px">
+                            </div>
+                                <div>
+                                <img src="media/aboutme_2.png" width="250px" height="250px">
+                            </div>
+                                <div>
+                                <img src="media/aboutme_3.png" width="250px" height="250px">
+                                </div>
+                                <div>
+                                    <img src="media/aboutme_4.png" width="250px" height="250px">
+                                </div>
+                                <div>
+                                        <img src="media/aboutme_5.png" width="250px" height="250px">
+                                    </div>
                             </div>
                             
                     
 
                     <div class="arrow_bottom" >
-                            <a href="#" id="arrow_next"><img src="media/arrowdown.png" alt="nextarrow"></a>
+                        <img src="media/arrowdown.png" alt="nextarrow" width="50px" height="50px">
                     </div>
                 </section>
 
@@ -120,7 +151,7 @@
                     
                     <h1>Section 3</h1>
                     <div class="arrow_bottom" >
-                            <a href="#" id="arrow_next"><img src="media/arrowdown.png" alt="nextarrow"></a>
+                        <img src="media/arrowdown.png" alt="nextarrow" width="50px" height="50px">
                     </div>
                 </section>
 
@@ -139,7 +170,7 @@
                     
                     <h1>Section 4</h1>
                     <div class="arrow_bottom" >
-                            <a href="#" id="arrow_next"><img src="media/arrowdown.png" alt="nextarrow"></a>
+                        <img src="media/arrowdown.png" alt="nextarrow" width="50px" height="50px">
                     </div>
                 </section>
 
@@ -158,7 +189,7 @@
                     
                     <h1>Section 5</h1>
                     <div class="arrow_bottom" >
-                            <a href="#" id="arrow_next"><img src="media/arrowdown.png" alt="nextarrow"></a>
+                        <img src="media/arrowdown.png" alt="nextarrow" width="50px" height="50px">
                     </div>
                 </section>
 

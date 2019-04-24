@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+    <TITLE>CSCI Exam 2</title>
+    <STYLE>
+    .box {
+        border: 5px solid black;
+        width: 100px;
+        height:100px;
+        background-color: gray;
+        display: inline-block;
+    }
+    .container{
+        border: 1px solid black;
+    }
+    </style>
+    <script src="script.js">
+    </script>
+</head>
+<body>
+
+<DIV class="container">
+    <center>
+    <DIV class="box" id="box0" onclick="first_box()"></DIV>
+    <DIV class="box" id="box1" onclick="second_box()"></DIV>
+    <DIV class="box" id="box2" onclick="third_box()"></DIV>
+    <DIV class="box" id="box3" onclick="fourth_box()"></DIV>
+    </center>
+</DIV>
+
+<BR><BR>
+
+<DIV class="container" style="padding:15px">
+<center>
+<button id="start_button" onclick="record()">Start Recording</button>
+<button id="play_button" style="display:none" onclick="play_recording()">Play Recording</button>
+</center>
+</DIV>
+
+<BR><BR>
+
+<DIV id="chat" class="container">Spencer Hewitt<br></DIV>
+
+</BODY></HTML>
