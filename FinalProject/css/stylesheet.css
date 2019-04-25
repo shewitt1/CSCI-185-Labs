@@ -29,38 +29,42 @@ body {
 }
 
 #fullpage section:nth-child(1) {
-    background-color: rgb(252, 224, 228);
+    background-color: rgb(253, 230, 237);
 }
 #fullpage section:nth-child(2) {
     background-color: rgb(217, 245, 255);
 }
 #fullpage section:nth-child(3) {
-    background-color: rgb(252, 224, 228);
+    background-color: rgb(253, 230, 237);
 }
 #fullpage section:nth-child(4) {
     background-color: rgb(217, 245, 255);
 }
 #fullpage section:nth-child(5) {
-    background-color: rgb(252, 224, 228);
+    background-color: rgb(253, 230, 237);
 }
 
-.navbar-items ul {
-    margin: 0px;
-    padding:0px;
-    display:flex;
-    justify-content: space-around;
+.navbar-items {
+    position:absolute;
+    right:0;
 }
 
-.navbar-items h3 {
-    display:inline-block;
-    text-align:center;
+.navbar-items img {
+    padding:15px;
+}
+
+
+.navbar-items a {
+    color:black;
+    text-decoration: none; 
+    margin:0; 
 }
 
 .full_name {
-    position:absolute;
-    top:95%;
-    left:50%;
-    transform:translate(-50%,-95%);
+    position: relative;
+top: 80%;
+left: 50%;
+transform: translate(-50%,-80%);
 }
 
 .bio_anim {
@@ -107,30 +111,37 @@ body {
     to   { transform: translate(0, -0px); }    
 }
 
+.section2_header {
+    position: relative;
+    top:0;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    }
+
   .about_text {
-      position:absolute;
-      top:155%;
-      left:50%;
-      margin:0;
-      padding:0;
-      transform:translate(-50%,-155%);
-      text-align:center;
-      font-size:20px;
-      line-height:30px;
-      width:60%
+    position: absolute;
+    top: 160%;
+    left: 50%;
+    margin: 0;
+    padding: 0;
+    transform: translate(-50%,-160%);
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+    width: 50vw;
 
   }
 
   .about_images {
-      position:absolute;
-      top:225%;
-      left:50%;
-      transform:translate(-50%,-225%);
-      width:250px;
-      height:250px;
-    margin:0;
-    padding:0;
-    overflow:auto;
+    position: relative;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-90%);
+    width: 300px;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+ 
   }
 
   .about_images > div {
@@ -138,10 +149,5 @@ body {
 
   }
 
-  .section2_header {
-      position:absolute;
-    top:180%;
-    left:50%;
-    transform:translate(-50%,-180%);
-}
+
 

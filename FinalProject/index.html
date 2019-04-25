@@ -3,8 +3,9 @@
     <head>
         <title>Spencer Hewitt</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
         <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+        <link rel="icon" type="image/png" href="media/icon.png">        
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="script.js"></script>
         <script src="http://code.jquery.com/jquery-3.4.0.js"></script>
@@ -29,21 +30,6 @@
     afterRender:function() {}
                   });
                 });
-
-                $(document).ready(function(){
-        $("#link2").click(function() {
-            $.scrollify.next();
-       });
-       $("#arrow_next").click(function() {
-            $.scrollify.next();
-       });
-       $("#link4").click(function() {
-            $.scrollify.next();
-       });
-       $("#link5").click(function() {
-            $.scrollify.next();
-       });
-    });
 
     $(function(){
 $(".about_images > div:gt(0)").hide();
@@ -71,13 +57,11 @@ setInterval(function() {
                 <section class="section">
                     <div class="navbar-top">
                         <span class="navbar-items">
-                            <ul>
-                                <a href="#" id="home" style="text-decoration: none;"><h3>Home</h3></a>
-                                <a href="#" id="link2"><h3>About</h3></a>
-                                <a href="#" id="link3"><h3>Portfolio</h3></a>
-                                <a href="#" id="link4"><h3>Projects</h3></a>
-                                <a href="#" id="link5"><h3>Contact</h3></a>
-                            </ul>
+                            
+                            <a href="https://github.com/shewitt1"><img src="media/github.svg" alt="github"></a>
+                            <a href="https://www.linkedin.com/in/spencerhewitt/"><img src="media/linkedin.svg" alt="linkedin"></a>
+                            <a href="mailto: shewitt@unca.edu"><img src="media/mail.svg" alt="email"></a>
+                            <a href=""><img src="media/img_542830.png" alt="resume" width="20px" height="24px"></a>
                         </span>
                     </div>
                     <br/>
@@ -90,17 +74,6 @@ setInterval(function() {
                     </div>
                 </section>
                 <section class="section" id="about">
-                        <div class="navbar-top">
-                                <span class="navbar-items">
-                                    <ul>
-                                        <a href="#" id="home" style="text-decoration: none;"><h3>Home</h3></a>
-                                        <a href="#" id="link2"><h3>About</h3></a>
-                                        <a href="#" id="link3"><h3>Portfolio</h3></a>
-                                        <a href="#" id="link4"><h3>Projects</h3></a>
-                                        <a href="#" id="link5"><h3>Contact</h3></a>
-                                    </ul>
-                                </span>
-                            </div>
 
                             <div class="section2_header">
                                     <h1>About Me</h1>
@@ -113,19 +86,19 @@ setInterval(function() {
 
                             <div class="about_images">
                                 <div>
-                                <img src="media/aboutme_1.png" width="250px" height="250px">
+                                <img src="media/aboutme_1.png" width="300px" height="300px">
                             </div>
                                 <div>
-                                <img src="media/aboutme_2.png" width="250px" height="250px">
+                                <img src="media/aboutme_2.png" width="300px" height="300px">
                             </div>
                                 <div>
-                                <img src="media/aboutme_3.png" width="250px" height="250px">
+                                <img src="media/aboutme_3.png" width="300px" height="300px">
                                 </div>
                                 <div>
-                                    <img src="media/aboutme_4.png" width="250px" height="250px">
+                                    <img src="media/aboutme_4.png" width="300px" height="300px">
                                 </div>
                                 <div>
-                                        <img src="media/aboutme_5.png" width="250px" height="250px">
+                                        <img src="media/aboutme_5.png" width="300px" height="300px">
                                     </div>
                             </div>
                             
@@ -137,18 +110,7 @@ setInterval(function() {
                 </section>
 
                 <section class="section" id="portfolio">
-                        <div class="navbar-top">
-                                <span class="navbar-items">
-                                    <ul>
-                                        <a href="#" id="home" style="text-decoration: none;"><h3>Home</h3></a>
-                                        <a href="#" id="link2"><h3>About</h3></a>
-                                        <a href="#" id="link3"><h3>Portfolio</h3></a>
-                                        <a href="#" id="link4"><h3>Projects</h3></a>
-                                        <a href="#" id="link5"><h3>Contact</h3></a>
-                                    </ul>
-                                </span>
-                            </div>
-                    
+        
                     <h1>Section 3</h1>
                     <div class="arrow_bottom" >
                         <img src="media/arrowdown.png" alt="nextarrow" width="50px" height="50px">
@@ -156,38 +118,8 @@ setInterval(function() {
                 </section>
 
                 <section class="section" id="projects">
-                        <div class="navbar-top">
-                                <span class="navbar-items">
-                                    <ul>
-                                        <a href="#" id="home" style="text-decoration: none;"><h3>Home</h3></a>
-                                        <a href="#" id="link2"><h3>About</h3></a>
-                                        <a href="#" id="link3"><h3>Portfolio</h3></a>
-                                        <a href="#" id="link4"><h3>Projects</h3></a>
-                                        <a href="#" id="link5"><h3>Contact</h3></a>
-                                    </ul>
-                                </span>
-                            </div>
                     
                     <h1>Section 4</h1>
-                    <div class="arrow_bottom" >
-                        <img src="media/arrowdown.png" alt="nextarrow" width="50px" height="50px">
-                    </div>
-                </section>
-
-                <section class="section" id="contact">
-                        <div class="navbar-top">
-                                <span class="navbar-items">
-                                    <ul>
-                                        <a href="#" id="home" style="text-decoration: none;"><h3>Home</h3></a>
-                                        <a href="#" id="link2"><h3>About</h3></a>
-                                        <a href="#" id="link3"><h3>Portfolio</h3></a>
-                                        <a href="#" id="link4"><h3>Projects</h3></a>
-                                        <a href="#" id="link5"><h3>Contact</h3></a>
-                                    </ul>
-                                </span>
-                            </div>
-                    
-                    <h1>Section 5</h1>
                     <div class="arrow_bottom" >
                         <img src="media/arrowdown.png" alt="nextarrow" width="50px" height="50px">
                     </div>
